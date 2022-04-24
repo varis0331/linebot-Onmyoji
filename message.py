@@ -116,7 +116,7 @@ def Carousel_Template():
                     actions=[
                         MessageTemplateAction(
                              label='請按以下按鈕查詢',
-                             text='我知道了'
+                             text=' '
                         ),
                         URITemplateAction(
                             label='點集查看攻略1',
@@ -135,7 +135,7 @@ def Carousel_Template():
                     actions=[
                         PostbackTemplateAction(
                             label='請按以下按鈕查詢',
-                            data='我知道了'
+                            data=' '
                         ),
                         URITemplateAction(
                             label='點集查看攻略1',
@@ -154,7 +154,7 @@ def Carousel_Template():
                     actions=[
                         PostbackTemplateAction(
                             label='請按以下按鈕查詢',
-                            data='我知道了'
+                            data=' '
                         ),
                         URITemplateAction(
                             label='點集查看攻略1',
@@ -173,7 +173,7 @@ def Carousel_Template():
                     actions=[
                         PostbackTemplateAction(
                             label='請按以下按鈕查詢',
-                            data='我知道了'
+                            data=' '
                         ),
                         URITemplateAction(
                             label='點集查看攻略1',
@@ -192,7 +192,7 @@ def Carousel_Template():
                     actions=[
                         PostbackTemplateAction(
                             label='請按以下按鈕查詢',
-                            data='我知道了'
+                            data=' '
                         ),
                         URITemplateAction(
                             label='點集查看攻略1',
@@ -211,7 +211,7 @@ def Carousel_Template():
                     actions=[
                         PostbackTemplateAction(
                             label='請按以下按鈕查詢',
-                            data='我知道了'
+                            data=' '
                         ),
                         URITemplateAction(
                             label='點集查看攻略1',
