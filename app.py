@@ -45,8 +45,8 @@ def callback():
         abort(400)
     return 'OK'
 
-
 #======讓heroku不會睡著======
+
 import threading 
 import requests
 def wake_up_heroku():
@@ -60,9 +60,11 @@ def wake_up_heroku():
         time.sleep(28*60)
 
 threading.Thread(target=wake_up_heroku).start()
+
 #======讓heroku不會睡著======
 
 # 處理訊息
+
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
@@ -86,7 +88,8 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
 
 
-#機器人回應圖片訊息
+#=====圖片訊息=====
+
     elif '多喝熱水' == msg:
         message = ImageSendMessage(
             original_content_url="https://i.imgur.com/RZmtbkc.jpg",
@@ -137,7 +140,11 @@ def handle_message(event):
             original_content_url="https://i.imgur.com/SydpJHU.jpg",
             preview_image_url="https://i.imgur.com/SydpJHU.jpg")
         line_bot_api.reply_message(event.reply_token, message)
-#機器人回應影片訊息
+
+#=====圖片訊息=====
+
+#=====影片訊息=====
+
     elif 'C8' == msg or 'c8' ==msg or '西八' == msg:
         message = VideoSendMessage(
             original_content_url='https://i.imgur.com/5KLaZUp.mp4',
@@ -154,19 +161,22 @@ def handle_message(event):
             preview_image_url='https://i.imgur.com/iGMjrgI.jpg')
         line_bot_api.reply_message(event.reply_token, message)    
 
-#八尬語錄
+#=====八尬語錄=====
+
     elif '拉屎' == msg or '八尬要拉屎' in msg :
         message = TextMessage(text="記得查廁紙...避免拉屎又沒紙")
         line_bot_api.reply_message(event.reply_token, message)
     elif '拉完了是不是' == msg or '拉完了484' == msg :
         line_bot_api.reply_message(event.reply_token, [TextMessage(text="記得用紙,擦屁股"),TextMessage(text="但要先有紙")]) 
 
-#活動更新專區
+#=====活動更新專區=====
+
     elif '活動' == msg  in msg :
         line_bot_api.reply_message(event.reply_token,  [ImageSendMessage(original_content_url='https://i.imgur.com/fqpaaDH.jpg',preview_image_url='https://i.imgur.com/fqpaaDH.jpg'), 
                                                         ImageSendMessage(original_content_url='https://i.imgur.com/mOMp0yg.jpg',preview_image_url='https://i.imgur.com/mOMp0yg.jpg')])
 
-#逢魔攻略專區
+#=====逢魔攻略專區=====
+
     elif '逢魔mp' == msg:
         message = TextMessage(text="親估唷~知憲想問你要查哪一個?\n鬼靈歌伎、荒骷髏、蜃氣樓、地震鯰，還是土蜘蛛,或者朧車呢?")
         line_bot_api.reply_message(event.reply_token, message)
@@ -192,7 +202,8 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
       
     
-#以下為神秘懸賞資料
+#=====神秘懸賞資料=====
+
     elif '羽毛'== msg or'笛子'== msg or'扇'== msg or'大翅膀' == msg or'大天狗' == msg:
         message = TextMessage(text="大天狗\n線索：大翅膀/風/羽毛/笛子/扇\n\n【御魂】 巫女大蛇悲鳴帶1個，第十層帶2個，第四層帶1個;\n\n【第十八章】 第一個三尾狐帶1個，BOSS大天狗帶1個;\n\n【第十五章】提燈小僧3個 數量1個\n\n【暴風之巔】第一至第十層數量1個\n\n【傘劍的守護-第四層】數量1個")
         line_bot_api.reply_message(event.reply_token, message)
@@ -307,6 +318,9 @@ def handle_message(event):
     elif '蠱' == msg or '蟲子' == msg or '迷魂' == msg or '巫蠱師' == msg  :
         message = TextSendMessage(text="巫蠱師\n線索：蠱/迷魂\n\n【夏之風物詩】 第三層帶3個;\n\n【御魂】 第六層帶1個;")
         line_bot_api.reply_message(event.reply_token, message)        
+
+#=====神秘懸賞資料=====        
+
     else:
         message = TextSendMessage(text="")
         line_bot_api.reply_message(event.reply_token, message)
