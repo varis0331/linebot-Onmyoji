@@ -87,6 +87,12 @@ def handle_message(event):
         message = function_list()
         line_bot_api.reply_message(event.reply_token, message)
 
+#=====關鍵字查詢=====
+
+    elif '關鍵字' == msg or '查詢關鍵字' in msg or '關鍵字查詢'  == msg :
+   
+        message = TextMessage(text="知憲負責的業務有以下關鍵字可提供查詢:\n1.請善用遊戲中神秘懸賞的關鍵字\n2.圖片關鍵字:多喝熱水、每日任務、每周任務、離譜、大雄、海豹、瞎狗眼、好慘喔、si、大佬\n3.影片關鍵字:c8\n4.關懷八尬小可愛:拉屎、拉完了是不是\n5.活動關鍵字:活動\n6.逢魔關鍵字:電腦板請查詢逢魔pc，手機板請查詢逢魔")
+        line_bot_api.reply_message(event.reply_token, message)
 
 #=====圖片訊息=====
 
@@ -95,12 +101,12 @@ def handle_message(event):
             original_content_url="https://i.imgur.com/RZmtbkc.jpg",
             preview_image_url="https://i.imgur.com/RZmtbkc.jpg")
         line_bot_api.reply_message(event.reply_token, message)
-    elif '每日任務' == msg:
+    elif '每日任務' == msg or '每日' == msg:
         message = ImageSendMessage(
             original_content_url="https://i.imgur.com/Yssopll.jpg",
             preview_image_url="https://i.imgur.com/Yssopll.jpg")
         line_bot_api.reply_message(event.reply_token, message)
-    elif '每周任務' == msg or '每週任務'== msg:
+    elif '每周任務' == msg or '每週任務'== msg or '每周' == msg or '每週' == msg:
         message = ImageSendMessage(
             original_content_url="https://i.imgur.com/TCA3L4i.jpg",
             preview_image_url="https://i.imgur.com/TCA3L4i.jpg")
@@ -150,16 +156,6 @@ def handle_message(event):
             original_content_url='https://i.imgur.com/5KLaZUp.mp4',
             preview_image_url='https://i.imgur.com/BPgTN1Z.jpg')
         line_bot_api.reply_message(event.reply_token, message)
-    elif '女兒' == msg or '耶那' ==msg:
-        message = VideoSendMessage(
-            original_content_url='https://i.imgur.com/uFj0Olh.mp44',
-            preview_image_url='https://i.imgur.com/g7DYmjW.jpg')
-        line_bot_api.reply_message(event.reply_token, message)
-    elif 'Wink' == msg or 'wink' ==msg:
-        message = VideoSendMessage(
-            original_content_url='https://i.imgur.com/6gZny1M.mp4',
-            preview_image_url='https://i.imgur.com/iGMjrgI.jpg')
-        line_bot_api.reply_message(event.reply_token, message)    
 
 #=====八尬語錄=====
 
@@ -177,7 +173,7 @@ def handle_message(event):
 
 #=====逢魔攻略專區=====
 
-    elif '逢魔mp' == msg:
+    elif '逢魔pc' == msg or '逢魔PC' == msg:
         message = TextMessage(text="親估唷~知憲想問你要查哪一個?\n鬼靈歌伎、荒骷髏、蜃氣樓、地震鯰，還是土蜘蛛,或者朧車呢?")
         line_bot_api.reply_message(event.reply_token, message)
     elif '鬼靈歌伎' == msg  in msg :
