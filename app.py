@@ -1,4 +1,5 @@
 from cgitb import text
+from email.errors import NonPrintableDefect
 from flask import Flask, request, abort
 
 from linebot import (
@@ -20,6 +21,7 @@ from Function import *
 import tempfile, os
 import datetime
 import time
+import random
 #======python的函數庫==========
 
 app = Flask(__name__)
@@ -87,11 +89,18 @@ def handle_message(event):
         message = function_list()
         line_bot_api.reply_message(event.reply_token, message)
 
+#=====抽獎=====
+
+    elif '抽獎' == msg :
+        message = random.choice("pk","kp")
+        line_bot_api.reply_message(event.reply_token,message)
+
+
 #=====關鍵字查詢=====
 
     elif '關鍵字' == msg or '查詢關鍵字' in msg or '關鍵字查詢'  == msg :
    
-        message = TextMessage(text="知憲負責的業務有以下關鍵字可提供查詢:\n1.請善用遊戲中神秘懸賞的關鍵字\n2.圖片關鍵字:多喝熱水、每日任務、每周任務、離譜、大雄、海豹、瞎狗眼、好慘喔、si、大佬\n3.影片關鍵字:c8\n4.關懷八尬小可愛:拉屎、拉完了是不是\n5.活動關鍵字:活動\n6.逢魔關鍵字:電腦板請查詢逢魔pc，手機板請查詢逢魔")
+        message = TextMessage(text="知憲負責的業務有以下關鍵字可提供查詢:\n\n1.請善用遊戲中神秘懸賞的關鍵字\n\n2.圖片關鍵字:多喝熱水、每日任務、每周任務、離譜、大雄、海豹、瞎狗眼、好慘喔、si、大佬\n\n3.影片關鍵字:c8\n\n4.關懷八尬小可愛:拉屎、拉完了是不是\n\n5.活動關鍵字:活動\n\n6.逢魔關鍵字:電腦板請查詢逢魔pc，手機板請查詢逢魔")
         line_bot_api.reply_message(event.reply_token, message)
 
 #=====圖片訊息=====
@@ -168,8 +177,8 @@ def handle_message(event):
 #=====活動更新專區=====
 
     elif '活動' == msg  in msg :
-        line_bot_api.reply_message(event.reply_token,  [ImageSendMessage(original_content_url='https://i.imgur.com/fqpaaDH.jpg',preview_image_url='https://i.imgur.com/fqpaaDH.jpg'), 
-                                                        ImageSendMessage(original_content_url='https://i.imgur.com/mOMp0yg.jpg',preview_image_url='https://i.imgur.com/mOMp0yg.jpg')])
+        line_bot_api.reply_message(event.reply_token,  [ImageSendMessage(original_content_url='',preview_image_url=''), 
+                                                        ImageSendMessage(original_content_url='',preview_image_url='')])
 
 #=====逢魔攻略專區=====
 
