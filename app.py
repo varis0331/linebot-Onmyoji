@@ -189,7 +189,7 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token,  [ImageSendMessage(original_content_url='https://i.imgur.com/3SEkPO9.jpg',preview_image_url='https://i.imgur.com/3SEkPO9.jpg'), 
                                                         ImageSendMessage(original_content_url='https://i.imgur.com/3PZAnT5.jpg',preview_image_url='https://i.imgur.com/3PZAnT5.jpg')])
     elif '荒骷髏' == msg  in msg :    
-        line_bot_api.reply_message(event.reply_token,  [ImageSendMessage(original_content_url='https://i.imgur.com/c1KLC4M.jpg',preview_image_url='https://i.imgur.com/c1KLC4M.jpg'), 
+        line_bot_api.reply_message(event.reply_token,  [ImageSendMessage(original_content_url='https://i.imgur.com/U5bWN5j.jpg',preview_image_url='https://i.imgur.com/U5bWN5j.jpg'), 
                                                         ImageSendMessage(original_content_url='https://i.imgur.com/LpDGoje.jpg',preview_image_url='https://i.imgur.com/LpDGoje.jpg')])
     elif '土蜘蛛' == msg  in msg :
         line_bot_api.reply_message(event.reply_token,  [ImageSendMessage(original_content_url='https://i.imgur.com/xcB9lSU.jpg',preview_image_url='https://i.imgur.com/xcB9lSU.jpg'), 
