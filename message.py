@@ -112,7 +112,7 @@ def Carousel_Template():
                 CarouselColumn(
                     thumbnail_image_url='https://i.imgur.com/qqjc2bE.jpg',
                     title='鬼靈歌伎',
-                    text='周一',
+                    text='週一',
                     actions=[
                         MessageTemplateAction(
                              label='請按以下按鈕查詢',
@@ -169,7 +169,7 @@ def Carousel_Template():
                  CarouselColumn(
                     thumbnail_image_url='https://i.imgur.com/IZC4SSR.jpg',
                     title='荒骷髏',
-                    text='周四',
+                    text='週四',
                     actions=[
                         PostbackTemplateAction(
                             label='請按以下按鈕查詢',
@@ -188,7 +188,7 @@ def Carousel_Template():
                  CarouselColumn(
                     thumbnail_image_url='https://i.imgur.com/DInxfkG.jpg',
                     title='地震鯰',
-                    text='周五',
+                    text='週五',
                     actions=[
                         PostbackTemplateAction(
                             label='請按以下按鈕查詢',
@@ -207,7 +207,7 @@ def Carousel_Template():
                  CarouselColumn(
                     thumbnail_image_url='https://i.imgur.com/tIoYWd4.jpg',
                     title='朧車',
-                    text='周末',
+                    text='週末',
                     actions=[
                         PostbackTemplateAction(
                             label='請按以下按鈕查詢',
