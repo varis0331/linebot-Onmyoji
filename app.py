@@ -175,10 +175,15 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, [TextMessage(text="記得用紙,擦屁股"),TextMessage(text="但要先有紙")]) 
 
 #=====活動更新專區=====
+    elif '活動' == msg :
+        message = ImageSendMessage(
+            original_content_url="https://i.imgur.com/BNE4TQA.jpg",
+            preview_image_url="https://i.imgur.com/BNE4TQA.jpg")
+        line_bot_api.reply_message(event.reply_token, message)
 
-    elif '活動' == msg  in msg :
-        line_bot_api.reply_message(event.reply_token,  [ImageSendMessage(original_content_url='',preview_image_url='https://i.imgur.com/BNE4TQA.jpg'), 
-                                                        ImageSendMessage(original_content_url='',preview_image_url='https://i.imgur.com/BNE4TQA.jpg')])
+    # elif '活動' == msg  in msg :
+    #     line_bot_api.reply_message(event.reply_token,  [ImageSendMessage(original_content_url='',preview_image_url=''), 
+    #                                                     ImageSendMessage(original_content_url='',preview_image_url='')])
 
 #=====逢魔攻略專區=====
 
