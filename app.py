@@ -168,8 +168,8 @@ def handle_message(event):
     
     elif '汗' == msg:
         message = VideoSendMessage(
-            original_content_url='https://imgur.com/fBtRb7s',
-            preview_image_url='https://i.imgur.com/fBtRb7s.mp4')
+            original_content_url='https://i.imgur.com/fBtRb7s.mp4',
+            preview_image_url='https://imgur.com/fBtRb7s')
         line_bot_api.reply_message(event.reply_token, message)
 
 #=====八尬語錄=====
