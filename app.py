@@ -188,11 +188,12 @@ def handle_message(event):
     #     line_bot_api.reply_message(event.reply_token, message)
 
     elif '活動' == msg  in msg :
-        line_bot_api.reply_message(event.reply_token,  [ImageSendMessage(original_content_url='https://i.imgur.com/FqGOblG.jpg',preview_image_url='https://i.imgur.com/FqGOblG.jpg'),
-                                                        ImageSendMessage(original_content_url='https://i.imgur.com/kKkC9d6.jpg',preview_image_url='https://i.imgur.com/kKkC9d6.jpg'),
-                                                        ImageSendMessage(original_content_url='https://i.imgur.com/2Sb31ev.jpg',preview_image_url='https://i.imgur.com/2Sb31ev.jpg'),
-                                                        ImageSendMessage(original_content_url='https://i.imgur.com/ayt1LJz.jpg',preview_image_url='https://i.imgur.com/ayt1LJz.jpg'),
-                                                        ImageSendMessage(original_content_url='https://i.imgur.com/GPFMs7N.jpg',preview_image_url='https://i.imgur.com/GPFMs7N.jpg')])
+        line_bot_api.reply_message(event.reply_token,  [ImageSendMessage(original_content_url='https://i.imgur.com/ZfyBSUR.jpg',preview_image_url='https://i.imgur.com/ZfyBSUR.jpg'),
+                                                        ImageSendMessage(original_content_url='https://i.imgur.com/8f51yH2.jpg',preview_image_url='https://i.imgur.com/8f51yH2.jpg'),
+                                                        ImageSendMessage(original_content_url='https://i.imgur.com/E2DLVw0.jpg',preview_image_url='https://i.imgur.com/E2DLVw0.jpg'),
+                                                        ImageSendMessage(original_content_url='https://i.imgur.com/uVq49pw.jpg',preview_image_url='https://i.imgur.com/uVq49pw.jpg'),
+                                                        ImageSendMessage(original_content_url='https://i.imgur.com/X9xncCR.jpg',preview_image_url='https://i.imgur.com/X9xncCR.jpg'),
+                                                        ImageSendMessage(original_content_url='https://i.imgur.com/oVppm8u.jpg',preview_image_url='https://i.imgur.com/oVppm8u.jpg')])
 
 #=====逢魔攻略專區=====
 
