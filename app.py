@@ -192,7 +192,7 @@ def handle_message(event):
                                                         ImageSendMessage(original_content_url='https://i.imgur.com/8f51yH2.jpg',preview_image_url='https://i.imgur.com/8f51yH2.jpg'),
                                                         ImageSendMessage(original_content_url='https://i.imgur.com/E2DLVw0.jpg',preview_image_url='https://i.imgur.com/E2DLVw0.jpg'),
                                                         ImageSendMessage(original_content_url='https://i.imgur.com/uVq49pw.jpg',preview_image_url='https://i.imgur.com/uVq49pw.jpg'),
-                                                        ImageSendMessage(original_content_url='https://i.imgur.com/oVppm8u.jpg',preview_image_url='https://i.imgur.com/oVppm8u.jpg')])
+                                                        ImageSendMessage(original_content_url='https://i.imgur.com/X9xncCR.jpg',preview_image_url='https://i.imgur.com/X9xncCR.jpg')])
 
 #=====逢魔攻略專區=====
 
