@@ -188,11 +188,9 @@ def handle_message(event):
     #     line_bot_api.reply_message(event.reply_token, message)
 # api限制圖片五張
     elif '活動' == msg  in msg :
-        line_bot_api.reply_message(event.reply_token,  [ImageSendMessage(original_content_url='https://i.imgur.com/8GADKf9.jpg',preview_image_url='https://i.imgur.com/8GADKf9.jpg'),
-                                                        ImageSendMessage(original_content_url='https://i.imgur.com/2poZ4tr.jpg',preview_image_url='https://i.imgur.com/2poZ4tr.jpg'),
-                                                        ImageSendMessage(original_content_url='https://i.imgur.com/L0lpGKD.jpg',preview_image_url='https://i.imgur.com/L0lpGKD.jpg'),
-                                                        ImageSendMessage(original_content_url='https://i.imgur.com/CxwKSi8.jpg',preview_image_url='https://i.imgur.com/CxwKSi8.jpg'),
-                                                        ImageSendMessage(original_content_url='https://i.imgur.com/Vpl6EfH.jpg',preview_image_url='https://i.imgur.com/Vpl6EfH.jpg')])
+        line_bot_api.reply_message(event.reply_token,  [ImageSendMessage(original_content_url='https://i.imgur.com/Ts54RZn.jpg',preview_image_url='https://i.imgur.com/Ts54RZn.jpg'),
+                                                        ImageSendMessage(original_content_url='https://i.imgur.com/dunNcxU.jpg',preview_image_url='https://i.imgur.com/dunNcxU.jpg'),
+                                                        ImageSendMessage(original_content_url='https://i.imgur.com/sChi5L6.jpg',preview_image_url='https://i.imgur.com/sChi5L6.jpg')])
 
 #=====逢魔攻略專區=====
 
