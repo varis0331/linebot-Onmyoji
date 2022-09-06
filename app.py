@@ -218,7 +218,13 @@ def handle_message(event):
             original_content_url="https://i.imgur.com/wM8WGiM.jpg",
             preview_image_url="https://i.imgur.com/wM8WGiM.jpg")
         line_bot_api.reply_message(event.reply_token, message)
-  
+#=====極土逢魔系列=====
+    elif '極土' == msg :
+        message = VideoSendMessage(
+            original_content_url='https://i.imgur.com/tJGsPNQ.png',
+            preview_image_url='https://i.imgur.com/tJGsPNQ.png')
+        line_bot_api.reply_message(event.reply_token, message)
+
     
 #=====神秘懸賞資料=====
 
