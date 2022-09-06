@@ -220,7 +220,7 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
 #=====極土逢魔系列=====
     elif '極土' == msg :
-        message = VideoSendMessage(
+        message = ImageSendMessage(
             original_content_url='https://i.imgur.com/tJGsPNQ.png',
             preview_image_url='https://i.imgur.com/tJGsPNQ.png')
         line_bot_api.reply_message(event.reply_token, message)
