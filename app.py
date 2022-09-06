@@ -186,6 +186,7 @@ def handle_message(event):
     #         original_content_url="https://i.imgur.com/BNE4TQA.jpg",
     #         preview_image_url="https://i.imgur.com/BNE4TQA.jpg")
     #     line_bot_api.reply_message(event.reply_token, message)
+
 # api限制圖片五張
     elif '活動' == msg  in msg :
         line_bot_api.reply_message(event.reply_token,  [ImageSendMessage(original_content_url='https://i.imgur.com/Ts54RZn.jpg',preview_image_url='https://i.imgur.com/Ts54RZn.jpg'),
@@ -217,12 +218,7 @@ def handle_message(event):
             original_content_url="https://i.imgur.com/wM8WGiM.jpg",
             preview_image_url="https://i.imgur.com/wM8WGiM.jpg")
         line_bot_api.reply_message(event.reply_token, message)
-
-   elif '極土' == msg  in msg :
-        message = ImageSendMessage(
-            original_content_url="https://i.imgur.com/tJGsPNQ.png",
-            preview_image_url="https://i.imgur.com/tJGsPNQ.png")
-        line_bot_api.reply_message(event.reply_token, message)   
+  
     
 #=====神秘懸賞資料=====
 
