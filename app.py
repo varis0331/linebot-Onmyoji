@@ -189,9 +189,7 @@ def handle_message(event):
 
 # api限制圖片五張
     elif '活動' == msg  in msg :
-        line_bot_api.reply_message(event.reply_token,  [ImageSendMessage(original_content_url='https://i.imgur.com/Ts54RZn.jpg',preview_image_url='https://i.imgur.com/Ts54RZn.jpg'),
-                                                        ImageSendMessage(original_content_url='https://i.imgur.com/dunNcxU.jpg',preview_image_url='https://i.imgur.com/dunNcxU.jpg'),
-                                                        ImageSendMessage(original_content_url='https://i.imgur.com/sChi5L6.jpg',preview_image_url='https://i.imgur.com/sChi5L6.jpg')])
+        line_bot_api.reply_message(event.reply_token,  [ImageSendMessage(original_content_url='https://i.imgur.com/XX141Jr.jpg',preview_image_url='https://i.imgur.com/XX141Jr.jpg')])
 
 #=====逢魔攻略專區=====
 
@@ -218,6 +216,7 @@ def handle_message(event):
             original_content_url="https://i.imgur.com/wM8WGiM.jpg",
             preview_image_url="https://i.imgur.com/wM8WGiM.jpg")
         line_bot_api.reply_message(event.reply_token, message)
+        
 #=====極土逢魔系列=====
     elif '極土' == msg :
         message = ImageSendMessage(
