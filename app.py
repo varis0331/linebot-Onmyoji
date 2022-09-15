@@ -179,6 +179,12 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
     elif '拉完了是不是' == msg or '拉完了484' == msg :
         line_bot_api.reply_message(event.reply_token, [TextMessage(text="記得用紙,擦屁股"),TextMessage(text="但要先有紙")]) 
+#=====寮任提醒=====
+    elif '寮任' == msg :
+        message = ImageSendMessage(
+            original_content_url="https://i.imgur.com/NvxBwxX.jpg",
+            preview_image_url="https://i.imgur.com/NvxBwxX.jpg")
+        line_bot_api.reply_message(event.reply_token, message)
 
 #=====活動更新專區=====
     elif '活動' == msg :
