@@ -160,7 +160,11 @@ def handle_message(event):
             original_content_url="https://i.imgur.com/BF2HabK.jpg",
             preview_image_url="https://i.imgur.com/BF2HabK.jpg")
         line_bot_api.reply_message(event.reply_token, message)
-
+    elif '寮任' == msg :
+        message = ImageSendMessage(
+            original_content_url="https://i.imgur.com/NvxBwxX.jpg",
+            preview_image_url="https://i.imgur.com/NvxBwxX.jpg")
+        line_bot_api.reply_message(event.reply_token, message)
 #=====圖片訊息=====
 
 #=====影片訊息=====
