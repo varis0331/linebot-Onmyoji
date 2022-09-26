@@ -155,7 +155,7 @@ def handle_message(event):
             original_content_url="https://i.imgur.com/SydpJHU.jpg",
             preview_image_url="https://i.imgur.com/SydpJHU.jpg")
         line_bot_api.reply_message(event.reply_token, message)
-    elif '?' == msg :
+    elif '?' == msg or '？'== msg :
         message = ImageSendMessage(
             original_content_url="https://i.imgur.com/BF2HabK.jpg",
             preview_image_url="https://i.imgur.com/BF2HabK.jpg")
