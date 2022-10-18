@@ -210,9 +210,10 @@ def handle_message(event):
 
 # api限制圖片五張
     elif '活動' == msg  in msg :
-        line_bot_api.reply_message(event.reply_token,  [ImageSendMessage(original_content_url='https://i.imgur.com/W4Xk6ex.jpg',preview_image_url='https://i.imgur.com/W4Xk6ex.jpg'),
-                                                        ImageSendMessage(original_content_url='https://i.imgur.com/OBz7kFt.jpg',preview_image_url='https://i.imgur.com/OBz7kFt.jpg'),
-                                                        ImageSendMessage(original_content_url='https://i.imgur.com/ZOZyJa1.jpg',preview_image_url='https://i.imgur.com/ZOZyJa1.jpg')])
+        line_bot_api.reply_message(event.reply_token,  [ImageSendMessage(original_content_url='https://i.imgur.com/0ACvBaw.jpg',preview_image_url='https://i.imgur.com/0ACvBaw.jpg'),
+                                                        ImageSendMessage(original_content_url='https://i.imgur.com/ScMGmm5.jpg',preview_image_url='https://i.imgur.com/ScMGmm5.jpg'),
+                                                        ImageSendMessage(original_content_url='https://i.imgur.com/HOFFqyc.jpg',preview_image_url='https://i.imgur.com/HOFFqyc.jpg'),
+                                                        ImageSendMessage(original_content_url='https://i.imgur.com/MkOP1e2.jpg',preview_image_url='https://i.imgur.com/MkOP1e2.jpg')])
 
 #=====逢魔攻略專區=====
 
