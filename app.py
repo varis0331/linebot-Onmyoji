@@ -162,8 +162,8 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, message)
     elif '挖'== msg or '挖賽' == msg or '蛤' == msg or '蝦' == msg:
         message = ImageSendMessage(
-            original_content_url="https://i.imgur.com/VCoOfbd.jpg",
-            preview_image_url="https://i.imgur.com/VCoOfbd.jpg")
+            original_content_url="https://i.imgur.com/nPOaRHl.jpg",
+            preview_image_url="https://i.imgur.com/nPOaRHl.jpg")
         line_bot_api.reply_message(event.reply_token, message)
     elif '寮任' == msg :
         message = ImageSendMessage(
