@@ -217,7 +217,6 @@ def handle_message(event):
     elif '活動' == msg  in msg :
         line_bot_api.reply_message(event.reply_token,  [ImageSendMessage(original_content_url='https://i.imgur.com/ScMGmm5.jpg',preview_image_url='https://i.imgur.com/ScMGmm5.jpg'),
                                                         ImageSendMessage(original_content_url='https://i.imgur.com/p9iSHvr.jpg',preview_image_url='https://i.imgur.com/p9iSHvr.jpg'),
-                                                        ImageSendMessage(original_content_url='https://i.imgur.com/tBZi8Vh.jpg',preview_image_url='https://i.imgur.com/tBZi8Vh.jpg'),
                                                         ImageSendMessage(original_content_url='https://i.imgur.com/0Rm5FDK.jpg',preview_image_url='https://i.imgur.com/0Rm5FDK.jpg')])
 
 #=====逢魔攻略專區=====
