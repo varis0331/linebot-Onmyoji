@@ -256,7 +256,7 @@ def handle_message(event):
 #=====神秘懸賞資料=====
 
     elif '羽毛'== msg or'笛子'== msg or'扇'== msg or'大翅膀' == msg or'大天狗' == msg:
-        message = TextMessage(text="大天狗\n線索：大翅膀/風/羽毛/笛子/扇\n\n【御魂】 巫女大蛇悲鳴帶1個，第十層帶2個，第四層帶1個;\n\n【第十八章】 第一個三尾狐帶1個，BOSS大天狗帶1個;\n\n【第十五章】提燈小僧3個 數量1個\n\n【暴風之巔】第一至第十層數量1個\n\n【傘劍的守護-第四層】數量1個")
+        message = TextMessage(text="大天狗\n線索：大翅膀/風/羽毛/笛子/扇\n\n【御魂】 女大蛇悲鳴帶1個，第十層帶2個，第四層帶1個;\n\n【第十八章】 第一個三尾狐帶1個，BOSS大天狗帶1個;\n\n【第十五章】提燈小僧3個 數量1個\n\n【暴風之巔】第一至第十層數量1個\n\n【傘劍的守護-第四層】數量1個")
         line_bot_api.reply_message(event.reply_token, message)
     elif '妖豔'== msg or'紅尾'== msg or'櫻花樹'== msg or'紅色' == msg:
         message = TextMessage(text="三尾狐\n線索：妖艷/紅尾/櫻花樹/紅色\n\n【暴風之巔】 一到四層各帶4個，五到六層各帶3個，第九層帶1個;\n\n【妖刀之秘籍】 第四層帶3個；")
